@@ -1,0 +1,45 @@
+.comment{
+    padding: $pd-6 0;
+    .comment__carousel{
+        margin: 0 20%;
+        .item{
+            margin: $mg-3;
+            text-align: center;
+            .comment__item{
+                display: inline-block;
+                width: 100px;
+                // height: auto;
+                margin-bottom: 20px;
+                .circle{
+                    border-radius: 50%;
+                }
+            }
+            .item__content{
+                p{
+                    font-size: $fs-2 + 1;
+                    font-style: italic;
+                    line-height: $lh-6;
+                    margin: 0 0 $mg-5;
+                    color: $color-black-3;
+                  
+                }
+                .name{
+                    margin-top: $mg-1;
+                    letter-spacing: $ls-2 + 1;
+                    text-transform: uppercase;
+                    color: $color-black-2;
+                    font-size: $fs-2 - 1;
+                    span{
+                        display: block;
+                        color: $color-white-9;
+                        font-size: $fs-1 + 2;
+                    }
+                }
+            }    
+        
+        }
+        .owl-theme .owl-dots .owl-dot.active span{
+            background-color: #eaeaea;
+        }
+    }
+}

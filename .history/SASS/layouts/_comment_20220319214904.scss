@@ -1,0 +1,27 @@
+.comment{
+    padding: $pd-6 0;
+    .comment__carousel{
+        margin: 0 20%;
+        .item{
+            margin: $mg-3;
+            text-align: center;
+            .comment__item{
+                display: inline-block;
+                width: 100px;
+                // height: auto;
+                margin-bottom: 20px;
+                .circle{
+                    border-radius: 50%;
+                }
+            }
+            .item__content{
+                p{
+                    font-size: $fs-2 + 1;
+                    font-style: italic;
+                    line-height: $lh-6;
+                }
+            }    
+        
+        }
+    }
+}

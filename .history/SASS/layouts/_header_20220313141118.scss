@@ -1,0 +1,22 @@
+header{
+    .navbar__content{
+        background: $color-black-0;
+        justify-content: space-between;
+       
+        .collapse{
+            display: inline-block;
+            .navbar-nav{
+                .nav-item{
+                    .nav-link{
+                        color: $color-white-0;
+                        text-transform: uppercase;
+                        padding: 0 $pd-1 + 2;
+                        outline: 0;
+                        font-size: $fs-1 + 3;
+                        font-weight: $fw-n;
+                    }
+                }
+            }
+        }
+    }
+}

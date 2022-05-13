@@ -1,0 +1,154 @@
+.teamMember {
+    padding-top:$pd-8 ;
+    padding-bottom: $pd-6;
+    .teamMember__head {
+        display: inline-block;
+        margin-bottom: $mg-3;
+    }
+    .teamMember__body {
+        .team__item {
+            padding: 0 $pd-5;
+            .team__member{
+                position: relative;;
+                img {
+                    width: 100%;
+                }
+                .team__info {
+                    position: absolute;
+                    right: 0;
+                    bottom: 30px;
+                    width: 70%;
+                    padding: $pd-1 $pd-3;
+                    text-align: right;
+                    background: $color-black-8;
+                    h5 {
+                        @extend %text--white;
+                    }
+                    span {
+                        @extend %text--grey;
+                    }
+                }
+                .overlay{
+                    &:hover .overlay__head{
+                        animation: head 0.3s ease;
+                    }
+                    &:hover .overlay__footer{
+                        animation: footer 0.2s linear;
+                    }
+                    .item__content{
+                        height: 100%;
+                        .overlay__head{
+                            position: absolute;
+                            top: 25%;
+                            left: 0;
+                            padding: 0 $pd-3;
+                            transform: translateY(40%);
+                            h4{
+                                text-transform: uppercase;
+                                margin-bottom: $mg-5;
+                                letter-spacing: $ls-4;
+                                font-size: $fs-2 - 1;
+                                color: $color-black-2;
+                            }
+                            p{
+                                margin-bottom: 0;
+                                color: $color-black-3;
+                                font-size: $fs-2 - 1;
+                                font-weight: normal;
+                                line-height: $lh-6;
+                            }
+                        }
+                        .overlay__footer{
+                            width: 100%;
+                            position: absolute;
+                            bottom: 5%;
+                            left: 0;
+                            transform: translateY(-20px);
+                            a{
+                                margin: 0 $pd-1;
+                                color: $color-black-12;
+                                font-size: $fs-2 + 1;
+                                transition: 0.3s;
+                                &:hover{
+                                    color: $color-yellow-0;
+                                }
+                            }
+                        }
+
+                        @keyframes head {
+                            from{
+                                transform: translateY(-50px);
+                            }
+                            to{
+                                transform: translateY(40%);
+                            }
+                        }
+                        @keyframes footer {
+                            from{
+                                transform: translateY(50px);
+                            }
+                            to{
+                                transform: translateY(-20px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .teamMember__bottom{
+        background-color: $color-white-6;
+        margin-top:$mg-8 ;
+        padding: $pd-7;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: $mg-3;
+        margin-right: $mg-3;
+        .teamBottom__info{
+            h4{ 
+                margin-bottom: 0;
+                letter-spacing: $ls-2;
+                text-transform: uppercase;
+                color: $color-black-12;
+                font-size:$fs-2 + 3 ;
+                line-height: $lh-0;
+                span{
+                    color: $color-yellow-0;
+                }
+            }
+            p{
+                margin-top: $mg-1;
+                color: $color-black-3;
+            }
+        }
+        .teamBottom__btn{
+            a{
+                color: $color-white-0;
+                background: $color-black-2;
+                padding: $pd-2 $pd-5;
+                border-radius: 0;
+                letter-spacing: $ls-2;
+                transition: 0.3s;
+                &:hover{
+                    background-color: $color-yellow-0;
+                }
+            }
+
+        }
+    }
+    @include responsive(large){
+        .container{
+            max-width: 750px;
+        }
+    }
+    @include responsive(medium){
+        .page-content{
+          .heading-title{
+            p{
+                width: 80%;
+            }
+          } 
+        }
+    }
+}

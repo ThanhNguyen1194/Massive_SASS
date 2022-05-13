@@ -1,0 +1,38 @@
+.banner{
+    background-image: url(../imgs/index-banner-2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    background-position: 50% 50%;
+    position: relative;
+    .banner-title{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: $color-white-0;
+        h1{
+            letter-spacing: $ls-1;
+            font-size: $fs-5;
+            font-weight: $fw-1;
+            line-height: $lh-2;
+        }
+        h3{
+            letter-spacing: $ls-1 + 1;
+            font-size: $fs-3;
+        }
+    }
+    @include responsive(medium){
+      
+            .banner-title{
+                display: block;
+                width: 100%;
+                h1{
+                    font-size: $fs-4 + 5;
+                }
+            }
+    
+    }
+}

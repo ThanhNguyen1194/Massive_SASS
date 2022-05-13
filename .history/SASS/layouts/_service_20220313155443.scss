@@ -1,0 +1,15 @@
+.services{
+    .page-content{
+        .service__header {
+            display: inline-block;
+            margin-bottom: $mg-6;
+            text-align: center;
+            .heading-title {
+                h3 {
+                    margin-bottom: $mg-3;
+                    padding-bottom: $pd-1;
+                }
+            }
+        }
+    }
+}

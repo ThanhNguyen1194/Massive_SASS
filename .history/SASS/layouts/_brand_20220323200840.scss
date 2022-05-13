@@ -1,0 +1,29 @@
+.brand{
+    padding: $pd-6 0;
+    border-top: 1px solid $color-white-10;
+    .brand__content{
+        margin: 0 50px;
+        .brand__carousel{
+            .item{
+                margin: $mg-3;
+            }
+        }
+        .owl-carousel{
+            .owl-dots{
+                text-align: center;
+                button.owl-dot{
+                //    display: inline-block; 
+                   span{
+                       display: inline-block;
+                       width: 12px;
+                       height: 12px;
+                       background-color: $color-white-3;
+                       margin: 0 $mg-0;
+                       border-radius: 50%;
+                       opacity: 0.6;
+                   }
+                }  
+            }
+        }
+    }
+}

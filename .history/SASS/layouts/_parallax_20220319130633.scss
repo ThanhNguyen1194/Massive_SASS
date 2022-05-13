@@ -1,0 +1,21 @@
+.parallax{
+    background-image: url(../../imgs/8.jpg);
+    padding: 150px 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+    .parallax__content{
+        text-align: center;
+        h4{
+            text-transform: uppercase;
+            letter-spacing: $ls-3;
+            font-size: $fs-2 + 1;
+        }
+        h2{
+            text-transform: uppercase;
+            margin-bottom: 0;
+            letter-spacing: $ls-3 - 1;
+        }
+    }
+}

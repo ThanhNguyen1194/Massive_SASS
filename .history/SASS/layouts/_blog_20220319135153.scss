@@ -1,0 +1,67 @@
+.blog {
+    padding: $pd-6 0;
+    .blog__head {
+        margin-bottom: $mg-6;
+    }
+    .blog__content {
+        .blog__item {
+            padding: 0 $pd-5;
+            .content__left {
+                position: relative;
+                img {
+                    width: 100%;
+                }
+                .blog__overlay {
+                    position: absolute;
+                    bottom: 0;
+                    color: $color-white-0;
+                    padding: $pd-1;
+                    background: $color-black-13;
+                    width: 100%;
+                    p{
+                        margin: 0;
+                    }
+                }
+            }
+            .content__right{
+                ul{
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    margin-bottom: $mg-1;
+                    li{
+                        display: inline-block;
+                        margin-right: $mg-1;
+                        a{
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            color: $color-white-7;
+                            font-size: $fs-1 + 2;
+                            letter-spacing: $ls-2;
+                            transition: 0.3s;
+                            &::after{
+                                content: ',';
+                            }
+                            &:hover{
+                                color: $color-yellow-0;
+                            }
+                        }
+                    }
+                }
+                h4{
+                    text-transform: uppercase;
+                    margin-bottom: $mg-1;
+                    a{
+                        text-decoration: none;
+                        color: $color-black-2;
+                        letter-spacing: $ls-2;
+                        font-size: $fs-3 - 2;
+                        &:hover{
+                            color: $color-yellow-0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.showcase{
+    padding-top: $pd-6;
+    .page-content{
+        margin-bottom: $mg-3;
+        display: inline-block;
+    }
+    .showcase__bottom{
+        .nav-tabs{
+            border-bottom: none;
+            .nav-item{
+                .nav-link{
+                    border: none;
+                    text-transform: uppercase;
+                    margin: 0 15px;
+                    letter-spacing: 3px;
+                    text-transform: uppercase;
+                    color: #a9a8a8;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.showcase{
+    padding-top: $pd-6;
+    .page-content{
+        margin-bottom: $mg-3;
+        display: inline-block;
+    }
+  .showcase__bottom{
+      .controls{
+        display: flex;
+        justify-content: center;
+        button{
+            margin: 0 $mg-2;
+            letter-spacing: $ls-3;
+            text-transform: uppercase;
+            color: $color-black-6;
+            font-size: $fs-2 - 1;
+            background: transparent;
+            border: none;
+            &.mixitup-control-active{
+                color: $color-black-2;
+            }
+        }
+      }
+      .showcase__items{
+          margin: $mg-6 0;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          .mix{
+              padding: 0px;
+              img{
+                  width: 100%;
+              }
+          }
+      }
+  }
+}

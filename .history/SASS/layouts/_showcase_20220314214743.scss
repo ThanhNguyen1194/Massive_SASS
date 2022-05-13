@@ -1,0 +1,75 @@
+.showcase{
+    padding-top: $pd-6;
+    .page-content{
+        margin-bottom: $mg-3;
+        display: inline-block;
+    }
+    .showcase__bottom{
+        .nav-tabs{
+            border-bottom: none;
+            align-items: center;
+            justify-content: center;
+            .nav-item{
+                .nav-link{
+                    border: none;
+                    text-transform: uppercase;
+                    margin: 0 $mg-2;
+                    letter-spacing: $ls-3;
+                    color: $color-black-6;
+                    font-size: $fs-2 - 1;
+                    padding: 0px;
+                    &.active{
+                        color: $color-black-2;
+                    }
+                }
+            }
+        }
+        .tab-content{
+            .showcase__item{
+                margin-top: $mg-6;
+                .overlay__item{
+
+                    position: relative;
+                    .item__img{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .item__overlay{
+                        position: absolute;
+                        z-index: 1;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        text-transform: uppercase;
+                        text-align: center;
+                        & a{
+                            color: $color-black-2;
+                            text-decoration: none;
+
+                        }
+                        .overlay__icon{
+                            font-size: $fs-6;
+                        }
+                        .overlay__text{
+                            h4{
+                                margin-bottom: $mg-0;
+                                letter-spacing: $ls-4;
+                                font-size: $fs-2 - 1;
+                            }
+                            p>a{
+                                color: $color-white-5;
+                                margin-bottom: 0;
+                                letter-spacing: 3px;
+                                text-transform: uppercase;
+                                color: #757575;
+                                font-size: 12px;
+                                font-weight: normal
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

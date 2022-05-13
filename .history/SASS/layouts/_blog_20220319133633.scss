@@ -1,0 +1,17 @@
+.blog{
+    padding: $pd-6 0;
+    .blog__head{
+        margin-bottom: $mg-6;
+    }
+    .blog__content{
+        .blog__item{
+            padding: 0 $pd-5;
+            .content__left{
+                img{
+                    width: 100%;
+                }
+            }
+            
+        }
+    }
+}

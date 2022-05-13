@@ -1,0 +1,12 @@
+.tab__parallax{
+    .container{
+        padding: 0 $pd-5;
+        .nav-tabs{
+            .nav-item{
+                .nav-link{
+                    font-size: $fs-6 + 1;
+                }
+            }
+        }
+    }
+}

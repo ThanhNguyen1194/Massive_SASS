@@ -1,0 +1,16 @@
+header{
+    .navbar__content{
+        background: $color-black-0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .navbar-nav{
+            .nav-item{
+                .nav-link{
+                    color: $color-white-0;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

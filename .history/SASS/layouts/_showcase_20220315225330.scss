@@ -1,0 +1,101 @@
+.showcase{
+    padding-top: $pd-6;
+    .page-content{
+        margin-bottom: $mg-3;
+        display: inline-block;
+    }
+    .showcase__bottom{
+        .nav-tabs{
+            border-bottom: none;
+            align-items: center;
+            justify-content: center;
+            .nav-item{
+                .nav-link{
+                    cursor: pointer;
+                    border: none;
+                    text-transform: uppercase;
+                    margin: 0 $mg-2;
+                    letter-spacing: $ls-3;
+                    color: $color-black-6;
+                    font-size: $fs-2 - 1;
+                    padding: 0px;
+                    &.active{
+                        color: $color-black-2;
+                    }
+                }
+            }
+        }
+        .tab-content{
+            .showcase__item{
+                margin-top: $mg-6;
+                .overlay__item{
+                    &:hover  .overlay__content{
+                        opacity: 1;
+                    }
+                    position: relative;
+                    .item__img{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .overlay__content{
+                        opacity: 0;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        bottom: 0;
+                        right: 0;
+                        border: 20px solid rgba(0, 0, 0, .1);
+                        background-color: rgba(255, 255, 255, .9);
+                        transition: 0.5s;
+                        .item__overlay{
+                            opacity: 1;
+                            position: absolute;
+                            // z-index: 1;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                            text-transform: uppercase;
+                            text-align: center;
+                            // &:hover {
+                            //     opacity: 0;
+                            // }
+                           
+                            & a{
+                                color: $color-black-2;
+                                text-decoration: none;
+                                transition: 00.3s;
+                            }
+                            .overlay__icon{
+                                font-size: $fs-6;
+                            }
+                            .overlay__text{
+                                margin-top: $mg-5;
+                                h4{
+                                    letter-spacing: $ls-4;
+                                    font-size: $fs-2 - 1;
+                                    &:hover a{
+                                        color: $color-yellow-0;
+                                    }
+                                }
+                                p{
+                                    margin-bottom: 0;
+                                    letter-spacing: $ls-3;
+                                    font-size: $fs-2 - 3;
+                                    &>a{
+                                        color: $color-white-5;
+                                        transition: 00.3s;
+                                        &:hover{
+                                            color: $color-yellow-0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}

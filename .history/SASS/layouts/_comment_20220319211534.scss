@@ -1,0 +1,15 @@
+.comment{
+    padding: $pd-6 0;
+    .item{
+        text-align: center;
+        .comment__item{
+            display: inline-block;
+            width: 100px;
+            // height: auto;
+            margin-bottom: 20px;
+            .circle{
+                border-radius: 50%;
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.brand{
+    padding: $pd-6 0;
+    .brand__content{
+        margin: 0 50px;
+        .brand__carousel{
+            .item{
+                margin: $mg-3;
+            }
+        }
+    }
+}

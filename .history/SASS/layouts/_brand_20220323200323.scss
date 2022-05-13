@@ -1,0 +1,20 @@
+.brand{
+    padding: $pd-6 0;
+    border-top: 1px solid $color-white-10;
+    .brand__content{
+        margin: 0 50px;
+        .brand__carousel{
+            .item{
+                margin: $mg-3;
+            }
+            .owl-carousel{
+                .owl-dots{
+                    text-align: center;
+                    button.owl-dot{
+                       display: inline-block; 
+                    }  
+                }
+            }
+        }
+    }
+}

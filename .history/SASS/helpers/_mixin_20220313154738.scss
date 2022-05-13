@@ -1,0 +1,25 @@
+@mixin responsive($screen) {
+    @if map-has-key($map: $breakpoints, $key: $screen) {
+        $value: map-get(
+            $map: $breakpoints,
+            $key: $screen,
+        );
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    } @else {
+        @warn "`{$screen}` isn't exist in breakpoints";
+    }
+}
+
+@mixin page_content() {
+    .service__header {
+        .heading-title {
+            margin-bottom: $mg-6;
+            h3 {
+                margin-bottom: $mg-3;
+                padding-bottom: $pd-1;
+            }
+        }
+    }
+}

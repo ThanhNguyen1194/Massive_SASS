@@ -1,0 +1,33 @@
+.teamMember {
+    .teamMember__head {
+        display: inline-block;
+        margin-bottom: $mg-3;
+    }
+    .teamMember__body {
+        .team__item {
+            position: relative;;
+            padding: 0 $pd-5;
+            .team__member{
+
+                img {
+                    width: 100%;
+                }
+                .team__info {
+                    position: absolute;
+                    right: 30px;
+                    bottom: 30px;
+                    width: 50%;
+                    padding: $pd-1 $pd-3;
+                    text-align: right;
+                    background: $color-black-8;
+                    h5 {
+                        @extend %text--white;
+                    }
+                    span {
+                        @extend %text--grey;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.rating{
+    padding: $pd-6 0;
+    .rating-item{
+        padding: 0 $pd-5;
+        text-align: center;
+        .icon{
+            i{
+
+            }
+            h1{
+                display: inline-block;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}

@@ -1,0 +1,94 @@
+.tab__parallax {
+    background-image: url(../../imgs/pattern-2.png);
+    background-attachment: fixed;
+    padding: $pd-6 0;
+    .container {
+        padding: 0 $pd-5;
+        .nav-tabs {
+            border-bottom: none;
+            .nav-item {
+                margin-right: $mg-3;
+                position: relative;
+                .nav-link {
+                    font-size: $fs-6 + 1;
+                    color: $color-black-9;
+                    background: $color-black-10;
+                    padding: $pd-5 + 5 $pd-8;
+                    border: none;
+                    &:hover {
+                        background: $color-white-0;
+                        &::after{
+                            opacity: 1;
+                            background-color: $color-white-0;
+                        }
+                    }
+                    &.active{
+                        background: $color-white-0;
+                        &::after{
+                            opacity: 1;
+                            background-color: $color-white-0;
+                        }
+                        
+                    }
+                    &::after{
+                        content: '';
+                        width: 20px;
+                        height: 20px;
+                        background: $color-black-10;
+                        position: absolute;
+                        bottom: -10px;
+                        transform: rotate(45deg);
+                        left: 50%;
+                        margin-left: -10px;
+                        opacity: 0;
+                        transition: 0.3s;
+                    }
+                    
+                }
+                
+            }
+        }
+        .tab-content {
+            padding: $pd-5 0;
+            .tab-pane {
+                line-height: $lh-6;
+                .heading-title-alt {
+                    margin-bottom: $mg-6;
+                    text-transform: uppercase;
+                    span {
+                        letter-spacing: $ls-3 - 1;
+                        color: $color-black-3;
+                        font-size: $fs-2 - 1;
+                    }
+                    h2 {
+                        margin-bottom: 0;
+                        letter-spacing: $ls-2 + 1;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive(medium){
+        .container{
+            max-width: 750px;
+            .nav-tabs{
+                .nav-item{
+                    width: 100%;
+                    margin-right: 0;
+                    margin-bottom: $mg-1;
+                    .nav-link{
+                        width: 100%;
+                    }
+                }
+            }
+            .tab-content{
+
+            } .tab-pane {
+
+            }.heading-title-alt {
+                h2{
+                    font-size: ;
+                }
+        }
+    }
+}

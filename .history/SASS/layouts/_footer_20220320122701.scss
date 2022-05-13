@@ -1,0 +1,25 @@
+footer{
+    .primary__footer{
+        padding: $pd-9 0;
+        background-color: $color-black-2;
+        color: $color-black-3;
+        .footer__item{
+            padding: 0 $pd-5;
+            .footer__logo{
+                display: block;
+                margin-bottom: $mg-5;
+            }
+            p{
+                margin: 0 0 $mg-5;
+                color: $color-black-3;
+                line-height: $lh-6;
+            }
+            h5{
+                text-transform: uppercase;
+            }
+        }
+    }
+    // .secondary__footer{
+
+    // }
+}
